@@ -15,28 +15,23 @@ function About() {
           <span>About Us</span>
         </h3>
         <p className="about-description">
-          Welcome to Health Plus, your trusted partner for accessible and
-          personalized healthcare. Our expert doctors offer online consultations
-          and specialized services, prioritizing your well-being. Join us on
-          this journey towards a healthier you.
+          Welcome to Hakata Health Solutions Pvt, your trusted partner in
+          comprehensive healthcare and medical supplies. We specialize in
+          delivering a wide range of high-quality products and services to
+          hospitals, government agencies, non-government organizations, and
+          healthcare professionals.
         </p>
-
-        <h4 className="about-text-title">Your Solutions</h4>
-
-        <SolutionStep
-          title="Choose a Specialist"
-          description="Find your perfect specialist and book with ease at Health Plus. Expert doctors prioritize your health, offering tailored care."
-        />
-
-        <SolutionStep
-          title="Make a Schedule"
-          description="Choose the date and time that suits you best, and let our dedicated team of medical professionals ensure your well-being with personalized care."
-        />
-
-        <SolutionStep
-          title="Get Your Solutions"
-          description="Our experienced doctors and specialists are here to provide expert advice and personalized treatment plans, helping you achieve your best possible health."
-        />
+        <h4 className="about-text-title">Your Products</h4>
+        <SolutionStep title="Laboratory machines" />
+        <SolutionStep title="Patients monitors" />
+        <SolutionStep title="X-ray machines" />
+        <SolutionStep title="Ventilator and Anesthesia machines" />
+        <SolutionStep title="Gynecology and Obstetrics Equipment, Diagnostic kits," />
+        <SolutionStep title="ECG, EMG, EEg" />
+        <SolutionStep title="Operation room equipment, Tubes, containers and Disposables" />
+        <SolutionStep title="Dental equipment, Educational Models, Dialysis machines, Endoscopes," />
+        <SolutionStep title="Surgical PPE, Hospital furniture, Opthalmology equipment" />
+        <SolutionStep title="Veterinary , equipment, Surgical equipment" />
       </div>
     </div>
   );

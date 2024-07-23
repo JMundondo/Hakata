@@ -10,12 +10,7 @@ function Footer() {
         <div className="ft-info">
           <div className="ft-info-p1">
             <p className="ft-title">
-              Health <span className="ft-sign">+</span>
-            </p>
-            <p className="ft-description">
-              Talk to online doctors and get medical advice, online
-              prescriptions, refills and medical notes within minutes. On-demand
-              healthcare services at your fingertips.
+              Hakata Health Solutions Pvt <span className="ft-sign">+</span>
             </p>
           </div>
 
@@ -26,23 +21,22 @@ function Footer() {
           <p className="ft-list-title">Services</p>
           <ul className="ft-list-items">
             <li>
-              <a href="#services">Emergency Care</a>
+              <a href="#services">Diagnostic Solutions</a>
             </li>
             <li>
-              <a href="#services">Heart Disease</a>
+              <a href="#services"> Medical Consumables</a>
             </li>
             <li>
-              <a href="#services">Dental Care</a>
+              <a href="#services">Dental Equipment</a>
             </li>
             <li>
-              <a href="#services">Prescription</a>
+              <a href="#services">Veterinary Products</a>
             </li>
             <li>
-              <a href="#services">Insights for doctors</a>
+              <a href="#services">Precision Engineering</a>
             </li>
           </ul>
         </div>
-
         <div className="ft-list">
           <p className="ft-list-title">Legal</p>
           <ul className="ft-list-items">
@@ -63,35 +57,32 @@ function Footer() {
             </li>
           </ul>
         </div>
-
         <div className="ft-list" id="contact">
           <p className="ft-list-title">Talk To Us</p>
           <ul className="ft-list-items">
             <li>
-              <a href="mailto:support@healthplus.com">support@healthplus.com</a>
+              <a href="mailto:example@email.com">example@email.com</a>
             </li>
             <li>
-              <a href="mailto:appointment@healthplus.com">
-                appointment@healthplus.com
-              </a>
+              <a href="mailto:example@email.com">example@email.com</a>
             </li>
             <li>
-              <a href="tel:+022 5454 5252">+022 5454 5252</a>
+              <a href="tel:+263 XXX  XXX2">+263 XXX XXX</a>
             </li>
             <li>
-              <a href="tel:+022 2326 6232">+022 2326 6232</a>
+              <a href="tel:+263 XXX  XXX">+263 XXX XXX</a>
             </li>
           </ul>
         </div>
       </div>
 
       <div className="ft-copyright">
-        <p>© 2013-2023 Health+. All rights reserved.</p>
+        <p>© 2024 Hakata Health Solutions+. All rights reserved.</p>
 
         <ul className="ft-social-links">
           <li>
             <a
-              href="https://linkedin.com/in/Alkaison/"
+              href="https://linkedin.com/"
               title="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
@@ -125,7 +116,7 @@ function Footer() {
 
           <li>
             <a
-              href="https://x.com/Alkaison/"
+              href="https://x.com/"
               title="Twitter"
               target="_blank"
               rel="noopener noreferrer"

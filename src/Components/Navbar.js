@@ -31,7 +31,7 @@ function Navbar() {
     <div className="navbar-section">
       <h1 className="navbar-title">
         <Link to="/">
-          Health <span className="navbar-sign">+</span>
+          Hakata Health Solutions<span className="navbar-sign">+</span>
         </Link>
       </h1>
 
@@ -50,16 +50,6 @@ function Navbar() {
         <li>
           <a href="#about" className="navbar-links">
             About
-          </a>
-        </li>
-        <li>
-          <a href="#reviews" className="navbar-links">
-            Reviews
-          </a>
-        </li>
-        <li>
-          <a href="#doctors" className="navbar-links">
-            Doctors
           </a>
         </li>
       </ul>
@@ -95,16 +85,7 @@ function Navbar() {
               About
             </a>
           </li>
-          <li>
-            <a onClick={openNav} href="#reviews">
-              Reviews
-            </a>
-          </li>
-          <li>
-            <a onClick={openNav} href="#doctors">
-              Doctors
-            </a>
-          </li>
+
           <li>
             <a onClick={openNav} href="#contact">
               Contact

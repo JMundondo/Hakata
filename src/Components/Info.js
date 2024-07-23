@@ -1,6 +1,13 @@
 import React from "react";
 import InformationCard from "./InformationCard";
-import { faHeartPulse, faTruckMedical, faTooth } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHeartPulse,
+  faTruckMedical,
+  faTooth,
+  faHospitalUser,
+  faThermometer2,
+  faPooBolt,
+} from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Info.css";
 
 function Info() {
@@ -11,42 +18,52 @@ function Info() {
           <span>What We Do</span>
         </h3>
         <p className="info-description">
-          We bring healthcare to your convenience, offering a comprehensive
-          range of on-demand medical services tailored to your needs. Our
-          platform allows you to connect with experienced online doctors who
-          provide expert medical advice, issue online prescriptions, and offer
-          quick refills whenever you require them.
+          Welcome to Hakata Health Solutions Pvt, your trusted partner in
+          comprehensive healthcare and medical supplies. We specialize in
+          delivering a wide range of high-quality products and services to
+          hospitals, government agencies, non-government organizations, and
+          healthcare professionals.
         </p>
       </div>
 
       <div className="info-cards-content">
         <InformationCard
-          title="Emergency Care"
-          description="Our Emergency Care service is designed to be your reliable support
-            in critical situations. Whether it's a sudden illness, injury, or
-            any medical concern that requires immediate attention, our team of
-            dedicated healthcare professionals is available 24/7 to provide
-            prompt and efficient care."
+          title="Medical Consumables"
+          description=" A wide range of essential medical supplies for daily healthcare needs.
+        Dental Equipment: High-quality dental tools and equipment to support dental professionals.
+              "
           icon={faTruckMedical}
         />
 
         <InformationCard
-          title="Heart Disease"
-          description="Our team of experienced cardiologists and medical experts use
-            state-of-the-art technology to assess your cardiovascular health and
-            design personalized treatment plans. From comprehensive screenings
-            to advanced interventions, we are committed to helping you maintain
-            a healthy heart and lead a fulfilling life."
+          title="Diagnostic Solutions"
+          description="Advanced diagnostic tools and technologies to ensure accurate and timely results."
           icon={faHeartPulse}
         />
 
         <InformationCard
-          title="Dental Care"
-          description="Smile with confidence as our Dental Care services cater to all your
-            oral health needs. Our skilled dentists provide a wide range of
-            treatments, from routine check-ups and cleanings to cosmetic
-            procedures and restorative treatments."
+          title="Dental Equipment"
+          description="High-quality dental tools and equipment to support dental professionals."
           icon={faTooth}
+        />
+        <InformationCard
+          title="Veterinary Products"
+          description=" A wide range of essential medical supplies for daily healthcare needs.
+        Dental Equipment: High-quality dental tools and equipment to support dental professionals.
+              "
+          icon={faThermometer2}
+        />
+
+        <InformationCard
+          title="Precision Engineering"
+          description="Custom engineering solutions for medical devices and equipment."
+          icon={faPooBolt}
+        />
+
+        <InformationCard
+          title="Biomedical Devices Supply and Repair"
+          description="Supplying and maintaining cutting-edge biomedical devices to ensure optimal performance and longevity."
+          icon={faHospitalUser}
         />
       </div>
     </div>
