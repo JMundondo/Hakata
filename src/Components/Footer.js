@@ -2,6 +2,8 @@ import React from "react";
 import "../Styles/Footer.css";
 import SubscribeNewsletter from "./SubscribeNewsletter";
 import { Link } from "react-router-dom";
+import HomeImg from "../Assets/homebackground.webp";
+import logoImage from "../Assets/logo.png";
 
 function Footer() {
   return (
@@ -9,9 +11,15 @@ function Footer() {
       <div className="footer-container">
         <div className="ft-info">
           <div className="ft-info-p1">
-            <p className="ft-title">
-              Hakata Health Solutions Pvt <span className="ft-sign">+</span>
-            </p>
+            <h1 className="navbar-title">
+              <Link to="/">
+                <img
+                  src={logoImage}
+                  alt="Hakata Health Solutions Logo"
+                  className="navbar-logo"
+                />
+              </Link>
+            </h1>
           </div>
 
           <SubscribeNewsletter />
@@ -40,20 +48,12 @@ function Footer() {
         <div className="ft-list">
           <p className="ft-list-title">Legal</p>
           <ul className="ft-list-items">
-            <li>
-              <Link to={"/legal"}>General Info</Link>
-            </li>
+            <li></li>
             <li>
               <Link to={"/legal"}>Privacy Policy</Link>
             </li>
             <li>
               <Link to={"/legal"}>Terms of Services</Link>
-            </li>
-            <li>
-              <Link to={"/legal"}>Consultations</Link>
-            </li>
-            <li>
-              <Link to={"/legal"}>How it Works</Link>
             </li>
           </ul>
         </div>
@@ -61,16 +61,15 @@ function Footer() {
           <p className="ft-list-title">Talk To Us</p>
           <ul className="ft-list-items">
             <li>
-              <a href="mailto:example@email.com">example@email.com</a>
+              <a href="mailto:enquiries@hakatahealth.co.zw">
+                enquiries@hakatahealth.co.zw
+              </a>
             </li>
             <li>
-              <a href="mailto:example@email.com">example@email.com</a>
+              <a href="tel:+263 71 604 8432">+263 71 604 8432</a>
             </li>
             <li>
-              <a href="tel:+263 XXX  XXX2">+263 XXX XXX</a>
-            </li>
-            <li>
-              <a href="tel:+263 XXX  XXX">+263 XXX XXX</a>
+              <a href="tel:++263 78 574 878">+263 78 574 878</a>
             </li>
           </ul>
         </div>

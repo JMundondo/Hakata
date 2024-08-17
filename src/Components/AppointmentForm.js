@@ -9,12 +9,14 @@ function AppointmentForm() {
   });
 
   const [patientName, setPatientName] = useState("");
+  const [patientEmail, setPatientEmail] = useState("");
   const [patientNumber, setPatientNumber] = useState("");
   const [patientGender, setPatientGender] = useState("default");
   const [appointmentTime, setAppointmentTime] = useState("");
   const [preferredMode, setPreferredMode] = useState("default");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formErrors, setFormErrors] = useState({});
+  const [goods, setGoods] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -56,6 +58,7 @@ function AppointmentForm() {
 
     // Reset form fields and errors after successful submission
     setPatientName("");
+    setPatientEmail("");
     setPatientNumber("");
     setPatientGender("default");
     setAppointmentTime("");
@@ -84,7 +87,7 @@ function AppointmentForm() {
 
         <form className="form-content" onSubmit={handleSubmit}>
           <label>
-            Patient Full Name:
+            Customer Full Name:
             <input
               type="text"
               value={patientName}
@@ -96,9 +99,22 @@ function AppointmentForm() {
             )}
           </label>
 
+          <label>
+            Customer Email:
+            <input
+              type="text"
+              value={patientEmail}
+              onChange={(e) => setPatientEmail(e.target.value)}
+              required
+            />
+            {formErrors.patientName && (
+              <p className="error-message">{formErrors.patientName}</p>
+            )}
+          </label>
+
           <br />
           <label>
-            Patient Phone Number:
+            Customer Phone Number:
             <input
               type="text"
               value={patientNumber}
@@ -111,26 +127,10 @@ function AppointmentForm() {
           </label>
 
           <br />
-          <label>
-            Patient Gender:
-            <select
-              value={patientGender}
-              onChange={(e) => setPatientGender(e.target.value)}
-              required
-            >
-              <option value="default">Select</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="private">I will inform Doctor only</option>
-            </select>
-            {formErrors.patientGender && (
-              <p className="error-message">{formErrors.patientGender}</p>
-            )}
-          </label>
 
           <br />
           <label>
-            Preferred Appointment Time:
+            Date of Prefered Delivery:
             <input
               type="datetime-local"
               value={appointmentTime}
@@ -144,38 +144,27 @@ function AppointmentForm() {
 
           <br />
           <label>
-            Preferred Mode:
-            <select
-              value={preferredMode}
-              onChange={(e) => setPreferredMode(e.target.value)}
+            Description of Goods:
+            <input
+              type="text"
+              value={goods}
+              onChange={(e) => setGoods(e.target.value)}
               required
-            >
-              <option value="default">Select</option>
-              <option value="voice">Voice Call</option>
-              <option value="video">Video Call</option>
-            </select>
-            {formErrors.preferredMode && (
-              <p className="error-message">{formErrors.preferredMode}</p>
+            />
+            {formErrors.patientNumber && (
+              <p className="error-message">{formErrors.patientNumber}</p>
             )}
           </label>
 
           <br />
           <button type="submit" className="text-appointment-btn">
-            Confirm Appointment
+            Confirm Quotation
           </button>
-
-          <p
-            className="success-message"
-            style={{ display: isSubmitted ? "block" : "none" }}
-          >
-            Appointment details has been sent to the patients phone number via
-            SMS.
-          </p>
         </form>
       </div>
 
       <div className="legal-footer">
-        <p>© 2013-2023 Health+. All rights reserved.</p>
+        <p>© 2024-2050 Hakata. All rights reserved.</p>
       </div>
 
       <ToastContainer autoClose={5000} limit={1} closeButton={false} />

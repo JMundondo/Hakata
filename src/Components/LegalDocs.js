@@ -36,9 +36,6 @@ function LegalDocs() {
         <p className="legal-title">Terms of Service</p>
         <p className="legal-description">
           When using Hakata Health Solutions, you agree to our Terms of Service.
-          This includes guidelines for using our platform, interacting with
-          doctors, and the responsibilities of both parties. It's essential to
-          understand these terms to ensure a smooth experience for all users.
         </p>
 
         <p className="legal-title">Consultations</p>

@@ -15,7 +15,7 @@
       rgba(0, 128, 0, 0.5),
       rgba(0, 0, 0, 0.7)
     ),
-    url("../Assets/homebackground.jpg");
+    url("../Assets/homebackground.webp");
 
   background-blend-mode: multiply;
   filter: brightness(0.9);

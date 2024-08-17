@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Doctor from "../Assets/doctor-picture.png";
-import HomeImg from "../Assets/homebackground.jpg";
+import HomeImg from "../Assets/homebackground.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";

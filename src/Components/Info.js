@@ -29,9 +29,7 @@ function Info() {
       <div className="info-cards-content">
         <InformationCard
           title="Medical Consumables"
-          description=" A wide range of essential medical supplies for daily healthcare needs.
-        Dental Equipment: High-quality dental tools and equipment to support dental professionals.
-              "
+          description=" A wide range of essential medical supplies for daily healthcare needs."
           icon={faTruckMedical}
         />
 
@@ -48,9 +46,7 @@ function Info() {
         />
         <InformationCard
           title="Veterinary Products"
-          description=" A wide range of essential medical supplies for daily healthcare needs.
-        Dental Equipment: High-quality dental tools and equipment to support dental professionals.
-              "
+          description=" A wide range of essential supplies for daily healthcare needs."
           icon={faThermometer2}
         />
 

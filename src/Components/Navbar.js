@@ -8,6 +8,7 @@ import {
 import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import logoImage from "../Assets/logo.png";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -31,7 +32,11 @@ function Navbar() {
     <div className="navbar-section">
       <h1 className="navbar-title">
         <Link to="/">
-          Hakata Health Solutions<span className="navbar-sign">+</span>
+          <img
+            src={logoImage}
+            alt="Hakata Health Solutions Logo"
+            className="navbar-logo"
+          />
         </Link>
       </h1>
 
@@ -54,14 +59,7 @@ function Navbar() {
         </li>
       </ul>
 
-      <button
-        className="navbar-btn"
-        type="button"
-        disabled={isButtonDisabled}
-        onClick={handleChatBtnClick}
-      >
-        <FontAwesomeIcon icon={faCommentDots} /> Live Chat
-      </button>
+      <li className="navbar-btn"></li>
 
       {/* Mobile */}
       <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>

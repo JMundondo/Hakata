@@ -16,10 +16,9 @@ function About() {
         </h3>
         <p className="about-description">
           Welcome to Hakata Health Solutions Pvt, your trusted partner in
-          comprehensive healthcare and medical supplies. We specialize in
-          delivering a wide range of high-quality products and services to
-          hospitals, government agencies, non-government organizations, and
-          healthcare professionals.
+          medical supplies. We specialize in delivering a wide range of
+          high-quality products and services to hospitals, government agencies,
+          non-government organizations, and healthcare professionals.
         </p>
         <h4 className="about-text-title">Your Products</h4>
         <SolutionStep title="Laboratory machines" />
