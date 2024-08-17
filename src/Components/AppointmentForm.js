@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../Styles/AppointmentForm.css";
 import { ToastContainer, toast } from "react-toastify";
 
+import logoImage from "../Assets/logo.png";
+
 function AppointmentForm() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -76,7 +78,11 @@ function AppointmentForm() {
     <div className="appointment-form-section">
       <h1 className="legal-siteTitle">
         <Link to="/">
-          Hakata Health Solutions Pvt <span className="legal-siteSign">+</span>
+          <img
+            src={logoImage}
+            alt="Hakata Health Solutions Logo"
+            className="navbar-logo"
+          />
         </Link>
       </h1>
 

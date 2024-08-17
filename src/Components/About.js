@@ -3,6 +3,8 @@ import Doctor from "../Assets/doctor-group.png";
 import SolutionStep from "./SolutionStep";
 import "../Styles/About.css";
 
+import logoImage from "../Assets/logo.png";
+
 function About() {
   return (
     <div className="about-section" id="about">

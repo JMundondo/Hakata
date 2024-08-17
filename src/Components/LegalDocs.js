@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/LegalDocs.css";
 
+import logoImage from "../Assets/logo.png";
+
 function LegalDocs() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -11,7 +13,11 @@ function LegalDocs() {
     <div className="legal-section-title">
       <h1 className="legal-siteTitle">
         <Link to="/">
-          Hakata Health Solutions <span className="legal-siteSign">+</span>
+          <img
+            src={logoImage}
+            alt="Hakata Health Solutions Logo"
+            className="navbar-logo"
+          />
         </Link>
       </h1>
 
