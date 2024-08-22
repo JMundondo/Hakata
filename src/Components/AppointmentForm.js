@@ -113,11 +113,54 @@ const Footer = styled.div`
   }
 `;
 
+const SuccessBanner = styled.div`
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #e8f5e9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+`;
+
+const SuccessLogo = styled(Logo)`
+  height: 150px;
+  margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    height: 100px;
+  }
+`;
+
+const SuccessMessage = styled.p`
+  color: #2e7d32;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+`;
+
 function AppointmentForm() {
   const [state, handleSubmit] = useForm("xdknwypy");
 
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <SuccessBanner>
+        <Link to="/">
+          <SuccessLogo src={logoImage} alt="Hakata Health Solutions Logo" />
+        </Link>
+        <SuccessMessage>
+          {" "}
+          Thanks for contacting us! We will email you your quotation shortly.
+        </SuccessMessage>
+        <Footer>
+          <p>© 2024-2050 Hakata. All rights reserved.</p>
+        </Footer>
+      </SuccessBanner>
+    );
   }
 
   return (
@@ -158,7 +201,7 @@ function AppointmentForm() {
         <Label htmlFor="appointmentTime">Date of Preferred Delivery</Label>
         <Input
           id="appointmentTime"
-          type="datetime-local"
+          type="date"
           name="appointmentTime"
           required
         />

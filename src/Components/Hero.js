@@ -52,22 +52,6 @@ function Hero() {
           >
             <FontAwesomeIcon icon={faCalendarCheck} /> Get Free Quote
           </button>
-          <div className="text-stats">
-            <div className="text-stats-container">
-              <p>145k+</p>
-              <p>Receive Patients</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>50+</p>
-              <p>Expert Doctors</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>10+</p>
-              <p>Years of Experience</p>
-            </div>
-          </div>
         </div>
       </div>
 

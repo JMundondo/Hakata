@@ -51,12 +51,6 @@ function Info() {
         />
 
         <InformationCard
-          title="Precision Engineering"
-          description="Custom engineering solutions for medical devices and equipment."
-          icon={faPooBolt}
-        />
-
-        <InformationCard
           title="Biomedical Devices Supply and Repair"
           description="Supplying and maintaining cutting-edge biomedical devices to ensure optimal performance and longevity."
           icon={faHospitalUser}
