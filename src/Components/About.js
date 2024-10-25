@@ -28,12 +28,17 @@ function About() {
         <SolutionStep title="Patients monitors" />
         <SolutionStep title="X-ray machines" />
         <SolutionStep title="Ventilator and Anesthesia machines" />
-        <SolutionStep title="Gynecology and Obstetrics Equipment, Diagnostic kits," />
+        <SolutionStep title="Gynecology and Obstetrics Equipment, ," />
         <SolutionStep title="ECG, EMG, EEg" />
-        <SolutionStep title="Operation room equipment, Tubes, containers and Disposables" />
-        <SolutionStep title="Dental equipment, Educational Models, Dialysis machines, Endoscopes," />
-        <SolutionStep title="Surgical PPE, Hospital furniture, Opthalmology equipment" />
-        <SolutionStep title="Veterinary , equipment, Surgical equipment" />
+        <SolutionStep title=" Surgical equipment" />
+        <SolutionStep title="Diagnostic kits" />
+        <SolutionStep title="Tubes, containers and Disposables" />
+        <SolutionStep title="Opthalmology equipment" />
+        <SolutionStep title="Educational Models, Dialysis machines, Endoscopes," />
+        <SolutionStep title="Operation room equipment," />
+        <SolutionStep title="Dental equipment, " />
+        <SolutionStep title="Surgical PPE, Hospital furniture, " />
+        <SolutionStep title="Veterinary , equipment," />
       </div>
     </div>
   );
